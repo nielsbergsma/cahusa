@@ -123,7 +123,7 @@ nav a {
 }
 
 .home header h1 {
-	font-size: 4vw;
+	font-size: 5vw;
 	letter-spacing: 0.1em;
 	text-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
@@ -137,7 +137,7 @@ nav a {
 .home header h2 {
 	display: inline-block;
 	letter-spacing: 0.1em;
-	font-size: 2vw;
+	font-size: 3vw;
 }
 
 .read-more-below {
@@ -164,7 +164,7 @@ nav a {
 .call-to-action {
 	position: fixed;
 	right: 3vw;
-	top: 10vh;
+	top: 7vh;
 	height: 10vh;
 } 
 
