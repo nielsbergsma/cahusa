@@ -1,0 +1,73 @@
+<!doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>CAHUSA | mejora tu negocio al empoderar a tu gente</title>
+	  <link rel="stylesheet" href="assets/css/site.css" />
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/jquery.scrollify.js"></script>
+      <script>
+      	
+
+        $(function() {
+          $.scrollify({
+            section : ".page",
+          });
+        });
+      </script>
+
+    </head>
+    <body>
+      <div class="page home" id="inicio" data-section-name="inicio">
+      	<nav>
+      		<a href="#próximos_eventos">próximos eventos</a>
+  			<a target="_blank" href="https://medium.com/">blog</a>
+			<a href="#contacto" onclick="$.scrollify.move('#contacto')">contacto</a>
+  		</nav>
+
+  		<div>
+  			<img id="logo" src="assets/img/logo.png" />
+  		</div>
+
+  		<header>
+  			<h1>mejora tu negocio al empoderar a tu gente</h1>
+  			<div class="subtitles">
+				<h2><a href="#">liderazgo y estrategia</a></h2>
+				<span class="vertical-divider"></span>
+				<h2><a href="#">cultura de la empresa</a></h2>
+				<span class="vertical-divider"></span>
+				<h2><a href="#">métodos de trabajo</a></h2>
+			</div>
+		</header>
+
+		<div class="call-to-action">
+			<a href="#contacto" onclick="$.scrollify.move('#contacto')">
+				<img src="assets/img/call-to-action.png">
+			</a>
+		</div>
+
+		<div class="read-more-below">
+			<img src="assets/img/down-arrow.png">
+			sigue leyendo a continuación
+		</div>
+      </div>
+
+      <div class="page content-page" id="cahusa" data-section-name="cahusa">
+      	<h1>Nosotros somos CAHUSA <span class="subtitle">en el año 2017<span></h1>
+
+      </div>
+      <div class="page content-page" id="contacto" data-section-name="contacto">
+      	<h1>Mantengámonos en contacto</h1>
+      	Trabajamos en todo el país, y estamos estacionados en Managua.<br />
+      	<br />
+      	<br />
+      	<p>
+			  Llámenos al +505 8888 0353 <br />
+			Envíenos un correo electrónico <a href="mailto:info@cahusa.com">info@cahusa.com</a><br />
+			 Descarga nuestro folleto<br />
+			<a target="_blank" href="https://medium.com"> Lee nuestro blog</a><br />
+			 Suscríbete a nuestro boletín informativo de próximos eventos y talleres<br />
+		</p>
+  	  </div>
+    </body>
+  </html>

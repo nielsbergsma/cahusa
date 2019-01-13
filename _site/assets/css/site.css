@@ -1,0 +1,191 @@
+/* resets */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* fonts */
+@font-face {
+  font-family: Simplifica;
+  src: url(/assets/font/simplifica.ttf);
+}
+
+@font-face {
+  font-family: Myriad Pro Light;
+  src: url(/assets/font/myriad_pro_light.otf);
+}
+
+/* site defaults */
+html {
+	background-color: #000000;
+	color: #ffffff;
+	font-family: Myriad Pro Light;
+	text-rendering: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Simplifica;
+	text-rendering: geometricPrecision;	
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* elements */
+
+h1 {
+	font-size: 4vh;
+}
+
+.subtitle {
+	font-size: 0.5em;
+}
+
+nav {
+	font-family: Simplifica;
+	letter-spacing: 0.2em;
+	text-align: right;
+	font-size: 2.2vh;
+	padding: 20px;
+	background-color: #000;
+}
+
+p {
+	line-height: 2em;
+}
+
+nav a {
+	display: inline-block;
+	margin-left: 3vw;
+}
+
+.home {
+	background-repeat: no-repeat;
+	background-position: 25% center;
+	background-size: auto 100%;
+	text-align: center;
+}
+
+@media screen and (min-width: 0px) {
+  .home {
+    background-image: url(/assets/img/hero_640.jpg);
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .home {
+    background-image: url(/assets/img/hero_1280.jpg);
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .home {
+    background-image: url(/assets/img/hero_2560.jpg);
+  }
+}
+
+
+#logo {
+	height: 25vh;
+	margin-top: 10vh;
+}
+
+.vertical-divider {
+	display: inline-block;
+	width: 2px;
+	background-color: #fff;
+}
+
+.home header {
+	display: inline-block;
+	margin-top: 20vh;
+}
+
+.home header h1 {
+	font-size: 5vh;
+	letter-spacing: 0.1em;
+	text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.home .subtitles {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2vh;
+}
+
+.home header h2 {
+	display: inline-block;
+	letter-spacing: 0.1em;
+	font-size: 3vh;
+}
+
+.read-more-below {
+	height: 2vh;
+	font-size: 2vh;
+	font-family: Simplifica;
+	position: absolute;
+	bottom: 3vh;
+	text-align: center;
+	width: 100vw;
+
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+}
+
+.read-more-below img {
+	height: 100%;
+}
+
+.content-page {
+	padding: 5vw;
+}
+
+.call-to-action {
+	position: fixed;
+	right: 3vw;
+	bottom: 10vh;
+	height: 10vh;
+} 
+
+.call-to-action img {
+	height: 100%;
+}
+
+/* animation */
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
