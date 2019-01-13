@@ -26,12 +26,12 @@ img {
 /* fonts */
 @font-face {
   font-family: Simplifica;
-  src: url(/assets/font/simplifica.ttf);
+  src: url(../font/simplifica.ttf);
 }
 
 @font-face {
   font-family: Myriad Pro Light;
-  src: url(/assets/font/myriad_pro_light.otf);
+  src: url(../font/myriad_pro_light.otf);
 }
 
 /* site defaults */
@@ -89,19 +89,19 @@ nav a {
 
 @media screen and (min-width: 0px) {
   .home {
-    background-image: url(/assets/img/hero_640.jpg);
+    background-image: url(../img/hero_640.jpg);
   }
 }
 
 @media screen and (min-width: 641px) {
   .home {
-    background-image: url(/assets/img/hero_1280.jpg);
+    background-image: url(../img/hero_1280.jpg);
   }
 }
 
 @media screen and (min-width: 1281px) {
   .home {
-    background-image: url(/assets/img/hero_2560.jpg);
+    background-image: url(../img/hero_2560.jpg);
   }
 }
 
