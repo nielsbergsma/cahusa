@@ -68,7 +68,7 @@ nav {
 	letter-spacing: 0.2em;
 	text-align: right;
 	font-size: 2.5vh;
-	padding: 20px;
+	padding: 1.5vh;
 	background-color: #000;
 }
 
@@ -150,7 +150,6 @@ nav a {
   }
 }
 
-
 .read-more-below {
 	display: block;
 	height: 2vh;
@@ -173,10 +172,17 @@ nav a {
 	padding: 5vw;
 }
 
-.call-to-action {
-	position: fixed;
+#inicio .call-to-action {
+	position: absolute;
 	right: 3vw;
 	top: 7vh;
+	height: 10vh;
+} 
+
+#cahusa .call-to-action {
+	position: absolute;
+	right: 3vw;
+	bottom: 7vh;
 	height: 10vh;
 } 
 
