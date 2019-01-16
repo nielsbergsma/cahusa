@@ -190,6 +190,26 @@ nav a {
 	height: 100%;
 }
 
+.collapsable-panel .form {
+	border-left: solid 1px #ffffff;
+	margin-left: 3vw;
+	padding: 20px;
+	display: none;
+}
+
+.collapsable-panel input[type='checkbox'] {
+	display: none;
+}
+
+.panel-toggle-label  {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.panel-toggle:checked + .panel-toggle-label + .panel-content  {
+	display: block;
+}
+
 /* animation */
 @keyframes bounce {
   from {

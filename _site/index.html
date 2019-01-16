@@ -69,10 +69,41 @@
       	<br />
       	<p>
 			<a href="tel:+50588880353 ">  Llámenos al +505 8888 0353 </a> (haz clic para llamar)<br />
-			<a href="mailto:info@cahusa.com">Envíenos un correo electrónico  info@cahusa.com</a><br />
+			<a href="mailto:info@cahusa.com">Envíenos un correo electrónico info@cahusa.com</a><br />
 			 Descarga nuestro folleto<br />
+
 			<a target="_blank" href="https://medium.com"> Lee nuestro blog</a><br />
-			 Suscríbete a nuestro boletín informativo de próximos eventos y talleres<br />
+			<div class="collapsable-panel">
+				 <input type="checkbox" id="newsletter-toggle" class="panel-toggle"><label class="panel-toggle-label" for="newsletter-toggle">Suscríbete a nuestro boletín informativo de próximos eventos y talleres</label>
+
+				<div class="panel-content form">
+					<form action="https://docs.google.com/forms/d/e/1FAIpQLSdzLjaOzrGhfX0SEumfKAwykRFLU8E946RKGpTycguuIMvdQg/formResponse?embedded=true" target="_blank" method="POST" id="mG61Hd">
+					  	Correo electrónico <input type="email" name="emailAddress" autocomplete="email" value="" required="">
+					     <input type="hidden" name="fvv" value="1">
+					     <input type="hidden" name="draftResponse" value="[null,null,&quot;3235167694712780616&quot;]">
+					     <input type="hidden" name="pageHistory" value="0">
+					     <input type="hidden" name="fbzx" value="3235167694712780616">
+					     <br/>
+					     <br/>
+					     <button onclick="submitNewsLetterSubscription()">Suscríbase ahora</button>
+					</form>
+
+					<div id="subscribe-to-newsletter-thank-you" style="display:none">
+						👍🏼 gracias por tu interes en nuestros servicios
+					</div>
+					<script>
+						function submitNewsLetterSubscription() {
+							const form = document.getElementById("mG61Hd")
+							const thanks = document.getElementById("subscribe-to-newsletter-thank-you")
+							
+							form.submit()
+							form.style.display = "none"
+							thanks.style.display = "block"
+						}
+					</script>
+				</div>
+			</div>
+
 		</p>
   	  </div>
     </body>
