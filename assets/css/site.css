@@ -15,7 +15,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 ol, ul {
-  list-style: none;
+  list-style-position: inside;
 }
 
 img {
@@ -52,7 +52,15 @@ a {
 	text-decoration: none;
 }
 
+p {
+	font-family: Myriad Pro Light;
+}
+
 /* elements */
+
+.page {
+	min-height: 100vh;
+}
 
 h1 {
 	font-size: 4vh;
@@ -70,10 +78,6 @@ nav {
 	font-size: 2.5vh;
 	padding: 1.5vh;
 	background-color: #000;
-}
-
-p {
-	line-height: 2em;
 }
 
 nav a {
@@ -94,13 +98,13 @@ nav a {
   }
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 400px) {
   .home {
     background-image: url(../img/hero_1280.jpg);
   }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 800px) {
   .home {
     background-image: url(../img/hero_2560.jpg);
   }
@@ -208,6 +212,91 @@ nav a {
 
 .panel-toggle:checked + .panel-toggle-label + .panel-content  {
 	display: block;
+}
+
+.text-column-container {
+	display: flex;
+	/*flex-wrap: wrap;*/
+}
+
+.text-column-container > .column {
+	margin-top: 2vh;
+	padding-right: 3vw;
+	text-align: justify;
+	font-size: 1.75vh;
+	line-height: 3vh;
+	flex: 1;	
+}
+
+.image-hex {
+	height: 20vh;
+}
+
+.image-hex-column-filling {
+	height: 60vw;
+}
+
+.image-hex.one-column.align-left {
+	float: left;
+	padding: 3vw;
+}
+
+.image-hex.one-column.align-right {
+	float: right;
+	padding: 3vw;
+}
+
+.image-hex.two-column.align-left {
+	margin-top: 15vh;
+	margin-left: -5vh
+}
+
+.image-hex.two-column.align-right {
+	margin-top: 15vh;
+	float:right;
+}
+
+.text-column-container  {
+    flex-direction: column;
+  }
+
+.image-hex.one-column {
+	display: initial;
+}
+
+.image-hex.two-column {
+	display: none;
+}
+
+@media screen and (orientation: landscape) and (min-width: 550px) {
+  .text-column-container  {
+    flex-direction: row;
+  }
+
+  .image-hex.one-column {
+	display: none;
+  }
+  
+  .image-hex.two-column {
+  	display: initial;
+  }
+
+  .image-hex-column-filling {
+	height: 30vw;
+  }
+}
+
+.page#contacto {
+	background-image: url(../img/sunset2-wide.png);
+	background-repeat: no-repeat;
+	background-size: auto 12vh; 
+	padding-top: 15vh;
+}
+
+.page#contacto a {
+	text-decoration: underline;
+
+	
 }
 
 /* animation */
